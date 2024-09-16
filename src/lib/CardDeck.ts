@@ -16,8 +16,7 @@ export default class CardDeck {
     }
 
     getCard(): Card {
-        const randomIndex = Math.floor(Math.random() * this.deck.length);
-        return this.deck.splice(randomIndex, 1)[0];
+        return this.deck.splice(Math.floor(Math.random() * this.deck.length), 1)[0];
     }
 
     getCards(howMany: number): Card[] {
